@@ -8,8 +8,8 @@ class RegistrationUtilTest{
     @Test
     fun checkValidDetail_correctDetail_returnsTrue(){
 
-        var student=Student("Gayatri",21)
-        var result= RegistrationUtil.checkValidDetail(student)
+        val student=Student("Gayatri",21)
+        val result= RegistrationUtil.checkValidDetail(student)
 
         assertThat(result).isTrue()
     }
@@ -17,8 +17,8 @@ class RegistrationUtilTest{
     @Test
     fun `check valid detail incorrect values return false`(){
 
-        var student=Student("Gayatri",15)
-        var result= RegistrationUtil.checkValidDetail(student)
+        val student=Student("Gayatri",15)
+        val result= RegistrationUtil.checkValidDetail(student)
 
         assertThat(result).isFalse()
     }
